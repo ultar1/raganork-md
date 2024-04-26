@@ -1,5 +1,3 @@
-FROM quay.io/souravkl11/rgnk-v3:latest
-
 RUN git clone https://github.com/Emmault/raganork-md
 WORKDIR /skl/Raganork
 ENV TZ=Asia/Kolkata
