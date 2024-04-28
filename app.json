@@ -41,7 +41,7 @@
         "STICKER_DATA": {
             "description": "Name of stickers created using bot. Can also split using ;",
             "required": true,
-            "value":"ʀᴀɢᷨᴀͦɴͭᴏʀᴋ"
+            "value":"𝖀𝖑𝖙-𝕬𝕽"
         },
         "CHATBOT": {
             "description": "AI chatbot",
@@ -56,7 +56,7 @@
         "BOT_INFO": {
             "description": "Name, image, owner and other details in menu (seperate with comma)",
             "required": true,
-            "value":"Raganork;Skl11;0;https://i.imgur.com/P7ziVhr.jpeg"
+            "value":"Raganork;𝖀𝖑𝖙-𝕬𝕽;0;https://i.imgur.com/P7ziVhr.jpeg"
         },
         "AUDIO_DATA": {
             "description": "Name of audio (take) name;name;image(url)",
@@ -71,7 +71,7 @@
         "SUDO": {
             "description": "These numbers can control your bot. seperate with commas",
             "required": false,
-            "value":"919074309534"
+            "value":"2349163916314"
         },
         "ALIVE": {
             "description": "Alive message {image/link}, {sender} can also be used",
