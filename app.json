@@ -76,7 +76,7 @@
         "ALIVE": {
             "description": "Alive message {image/link}, {sender} can also be used",
             "required": false,
-            "value":"Hey {sender}, I'm alive for {uptime}"
+            "value":"Hey {sender} {pp}, I'm alive for {uptime} {quote}"
         },
        "SESSION": {
             "description": "Your MD session",
