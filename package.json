@@ -30,6 +30,7 @@
     "acrcloud": "1.4.0",
     "adm-zip": "0.5.9",
     "awesome-phonenumber": "5.3.0",
+    "axios": "1.7.5",
     "badwords": "1.0.0",
     "google-tts-api": "2.0.2",
     "image-to-pdf": "2.0.0",
