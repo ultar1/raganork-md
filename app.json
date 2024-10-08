@@ -76,7 +76,13 @@
         "ALIVE": {
             "description": "Alive message {image/link}, {sender} can also be used",
             "required": false,
-            "value":"Hey {sender}, I'm alive for {uptime} https://i.imgur.com/P7ziVhr.jpeg"
+            "value":"👋 Hello {sender}!
+
+🚀 *I'm up and running smoothly!*
+⏳ *Uptime:* {uptime}
+🧠 *Feeling smart and ready to assist you!*
+📜 Type *.list or .menu* to see more of what I can do!
+https://i.imgur.com/P7ziVhr.jpeg"
         },
        "SESSION": {
             "description": "Your MD session",
