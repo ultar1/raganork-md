@@ -11,7 +11,7 @@
         "HANDLERS": {
             "description": "Prefix of commands. Can be also false",
             "required": true,
-            "value":".,"
+            "value":"."
         },
         "ANTILINK_WARN": {
             "description": "Groups for antilink (JIDS)",
@@ -31,17 +31,17 @@
        "HEROKU_API_KEY": {
             "description": "For updating bot and setting vars remotely",
             "required": true,
-            "value":""
+            "value":"."
         },
         "HEROKU_APP_NAME": {
             "description": "Exact name which you gave at the top",
             "required": true,
-            "value":""
+            "value":"."
         },
         "STICKER_DATA": {
             "description": "Name of stickers created using bot. Can also split using ;",
             "required": true,
-            "value":"ʀᴀɢᷨᴀͦɴͭᴏʀᴋ"
+            "value":"𝖀𝖑𝖙-𝕬𝕽"
         },
         "CHATBOT": {
             "description": "AI chatbot",
@@ -56,7 +56,7 @@
         "BOT_INFO": {
             "description": "Name, image, owner and other details in menu (seperate with comma)",
             "required": true,
-            "value":"Raganork,SKL11,91123456789,https://i.imgur.com/B2YWSLk.jpg"
+            "value":"Raganork;𝖀𝖑𝖙-𝕬𝕽;0;https://i.imgur.com/P7ziVhr.jpeg"
         },
         "AUDIO_DATA": {
             "description": "Name of audio (take) name;name;image(url)",
@@ -71,12 +71,12 @@
         "SUDO": {
             "description": "These numbers can control your bot. seperate with commas",
             "required": false,
-            "value":"919074309534"
+            "value":"2349163916314"
         },
         "ALIVE": {
             "description": "Alive message {image/link}, {sender} can also be used",
             "required": false,
-            "value":"{pp} Active since {uptime}\n User:{sender}"
+            "value":"Hey {sender}, I'm alive for {uptime}"
         },
        "SESSION": {
             "description": "Your MD session",
@@ -93,4 +93,4 @@
       {
       "url": "https://github.com/clhuang/heroku-buildpack-webp-binaries.git"
       }]
-  }
+}
