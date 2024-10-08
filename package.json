@@ -11,7 +11,7 @@
   },
   "overrides": {
     "raganork-bot": {
-      "youtubei.js": "^2.5.3"
+      "youtubei.js": "^10.5.0"
     }
   },
   "keywords": [
@@ -44,6 +44,6 @@
     "sequelize": "^6.37.3",
     "sqlite3": "^5.1.7",
     "string-crypto": "2.0.2",
-    "youtubei.js": "^9.1.0"
+    "youtubei.js": "^10.5.0"
   }
 }
