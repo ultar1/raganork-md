@@ -81,6 +81,16 @@
     "SESSION": {
       "description": "Your MD session",
       "required": true
+    },
+    "AUTO_READ_STATUS": {
+      "description": "Automatically read messages (true or false)",
+      "required": false,
+      "value": "false"
+    },
+    "ALWAYS_ONLINE": {
+      "description": "Keep bot always online (true or false)",
+      "required": false,
+      "value": "false"
     }
   },
   "addons": [
