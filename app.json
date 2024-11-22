@@ -23,6 +23,11 @@
       "required": true,
       "value": "false"
     },
+    "PM_ANTISPAM": {
+      "description": "Enable or disable private message anti-spam (true or false)",
+      "required": true,
+      "value": "true"
+    },
     "READ_COMMAND": {
       "description": "Bot will read all commands (blue tick). Can be also false",
       "required": true,
@@ -90,7 +95,7 @@
     "ALWAYS_ONLINE": {
       "description": "Keep bot always online (true or false)",
       "required": false,
-      "value": "false"
+      "value": "true"
     }
   },
   "addons": [
