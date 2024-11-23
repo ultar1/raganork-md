@@ -35,7 +35,7 @@
     "google-tts-api": "^2.0.2",
     "image-to-pdf": "^2.0.0",
     "imgur": "^2.2.0",
-    "link-preview-js": "^2.1.15",
+    "link-preview-js": "^3.0.0",
     "mongodb": "^5.9.0",
     "node-cron": "^3.0.2",
     "node-webpmux": "^3.2.0",
@@ -45,6 +45,8 @@
     "sequelize": "^6.37.3",
     "sqlite3": "^5.1.7",
     "string-crypto": "^2.0.2",
+    "typescript": "^4.6.4",
+    "typedoc": "^0.22.15",
     "youtubei.js": "^10.5.0"
   }
 }
