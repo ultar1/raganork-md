@@ -1,7 +1,7 @@
 {
   "name": "raganork-md",
   "version": "5.0.0",
-  "description": "A lightweight WhatsApp bot.",
+  "description": "A light weight WhatsApp bot.",
   "scripts": {
     "start": "pm2 start . --attach --name Raganork"
   },
@@ -11,7 +11,7 @@
   },
   "overrides": {
     "raganork-bot": {
-      "youtubei.js": "^10.5.0"
+      "youtubei.js": "^2.5.3"
     }
   },
   "keywords": [
@@ -25,28 +25,25 @@
   "homepage": "https://github.com/souravkl11/raganork#readme",
   "dependencies": {
     "@adiwajshing/baileys": "git+https://github.com/souravkl11/Baileys.git",
-    "@adiwajshing/keyed-db": "^0.2.4",
-    "@whiskeysockets/baileys": "git+https://github.com/WhiskeySockets/Baileys.git#f5a5eb9",
-    "acrcloud": "^1.4.0",
-    "adm-zip": "^0.5.10",
-    "awesome-phonenumber": "^5.3.0",
-    "axios": "^1.7.5",
-    "bad-words": "^3.0.4",
-    "google-tts-api": "^2.0.2",
-    "image-to-pdf": "^2.0.0",
+    "@adiwajshing/keyed-db": "0.2.4",
+    "@whiskeysockets/baileys": "github:sou6av/baileys-js",
+    "acrcloud": "1.4.0",
+    "adm-zip": "0.5.9",
+    "awesome-phonenumber": "5.3.0",
+    "badwords": "1.0.0",
+    "google-tts-api": "2.0.2",
+    "image-to-pdf": "2.0.0",
     "imgur": "^2.2.0",
-    "link-preview-js": "^3.0.0",
-    "mongodb": "^5.9.0",
-    "node-cron": "^3.0.2",
-    "node-webpmux": "^3.2.0",
-    "pg": "^8.11.2",
-    "pm2": "^5.4.3",
+    "link-preview-js": "2.1.15",
+    "mongodb": "^4.3.1",
+    "node-cron": "3.0.1",
+    "node-webpmux": "^3.1.0",
+    "pg": "^8.5.1",
+    "pm2": "^5.2.2",
     "raganork-bot": "^3.0.1",
-    "sequelize": "^6.37.3",
-    "sqlite3": "^5.1.7",
-    "string-crypto": "^2.0.2",
-    "typescript": "^4.6.4",
-    "typedoc": "^0.22.15",
-    "youtubei.js": "^10.5.0"
+    "sequelize": "^6.13.0",
+    "sqlite3": "^5.0.0",
+    "string-crypto": "2.0.2",
+    "youtubei.js": "^9.1.0"
   }
 }
