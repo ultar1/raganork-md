@@ -344,59 +344,60 @@ fs.writeFileSync('./config.env', lines.join('\n'));
         return await message.sendReply("_AI ChatBot mode_\n\n"+"_Current status: *"+config.CHATBOT+"*\n\n_Use: .chatbot on/off_")    
     }));
     Module({
-        pattern: 'settings ?(.*)',
-        fromMe: true,
-        desc: "Bot settings to enable extra options related to WhatsApp bot functionality.",
-        use: 'owner'
-    }, (async (message, match) => {
-        let configs = settingsMenu
-        if (match[1]){
-            if (configs.map(e=>e.title).includes(match[1])){
-                let buttons = {
-                    type: 'quick_reply',
-                    head: {
-                      title: match[1],
-                      subtitle:"",
-                      footer: `Select an action, on or off?`
-                    },
-                    body: [{
-                        name: "quick_reply",
-                        buttonParamsJson: `{"display_text":"ON","id":"${handler}setvar ${configs.filter(e=>e.title == match[1])[0].env_var}:true"}`
-                      }, {
-                        name: "quick_reply",
-                        buttonParamsJson: `{"display_text":"OFF","id":"${handler}setvar ${configs.filter(e=>e.title == match[1])[0].env_var}:false"}`
-                      }]
-                  }
-                  return await message.sendInteractiveMessage(message.jid, buttons,{quoted: message.data})                  
-            }
+    pattern: 'settings ?(.*)',
+    fromMe: true,
+    desc: "Bot settings to enable extra options related to WhatsApp bot functionality.",
+    use: 'owner'
+}, (async (message, match) => {
+    console.log("Settings command received");
+    let configs = settingsMenu;
+    if (match[1]){
+        console.log(`Match found: ${match[1]}`);
+        if (configs.map(e => e.title).includes(match[1])){
+            let buttons = {
+                type: 'quick_reply',
+                head: {
+                    title: match[1],
+                    subtitle: "",
+                    footer: `Select an action, on or off?`
+                },
+                body: [{
+                    name: "quick_reply",
+                    buttonParamsJson: `{"display_text":"ON","id":"${handler}setvar ${configs.filter(e => e.title == match[1])[0].env_var}:true"}`
+                }, {
+                    name: "quick_reply",
+                    buttonParamsJson: `{"display_text":"OFF","id":"${handler}setvar ${configs.filter(e => e.title == match[1])[0].env_var}:false"}`
+                }]
+            };
+            return await message.sendInteractiveMessage(message.jid, buttons, { quoted: message.data });
         }
-        let list = {
-            type: 'single_select',
-            head: {
-              title: "*Settings configuration menu*",
-              subtitle:"",
-              footer: ''
-            },
-            body : {
-            title:"Select an option",
-            sections:[
-            {
-            title:"Select an option",
-            highlight_label:"",
-            rows:[]
-            }
-            ]
-            }
-          }
-          configs.map((e)=>{
-            list.body.sections[0].rows.push({
-                title: e.title,
-                description:'',
-                id: handler+"settings " + e.title
-            })
-        })
-          return await message.sendInteractiveMessage(message.jid, list,{quoted: message.data})
-          }));
+    }
+    console.log("Sending settings menu");
+    let list = {
+        type: 'single_select',
+        head: {
+            title: "*Settings configuration menu*",
+            subtitle: "",
+            footer: ''
+        },
+        body: {
+            title: "Select an option",
+            sections: [{
+                title: "Select an option",
+                highlight_label: "",
+                rows: []
+            }]
+        }
+    };
+    configs.map((e) => {
+        list.body.sections[0].rows.push({
+            title: e.title,
+            description: '',
+            id: handler + "settings " + e.title
+        });
+    });
+    return await message.sendInteractiveMessage(message.jid, list, { quoted: message.data });
+}));
     Module({
         pattern: 'mode ?(.*)',
         fromMe: true,
