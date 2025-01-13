@@ -26,7 +26,7 @@
     "PM_ANTISPAM": {
       "description": "Enable or disable private message anti-spam (true or false)",
       "required": true,
-      "value": "true"
+      "value": "false"
     },
     "READ_COMMAND": {
       "description": "Bot will read all commands (blue tick). Can be also false",
