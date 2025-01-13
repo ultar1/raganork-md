@@ -713,7 +713,7 @@ const oldSudo = config.SUDO?.split(",")
             try {
             await chatBot(message, Config.BOT_NAME)
             } catch {
-                return await message.sendReply("Ohh :/")
+                return await message.sendReply("𝖀𝖑𝖙-𝕬𝕽")
             }
         }
         var db = await antilink.get();
