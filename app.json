@@ -1,96 +1,114 @@
 {
-	"name": "Deploy",
-	"description": "Wa Bot.",
-	"keywords": [
-		"whatsapp",
-		"bot"
-	],
-	"repository": "https://github.com/raganork-ind/whatsapp-bot",
-	"stack": "container",
-    "env": { 
-        "HANDLERS": {
-            "description": "Prefix of commands. Can be also false",
-            "required": true,
-            "value":".,"
-        },
-        "ANTILINK_WARN": {
-            "description": "Groups for antilink (JIDS)",
-            "required": false,
-            "value":"jid,jid"
-        },
-        "READ_MESSAGES": {
-            "description": "Bot will read all messages. Can be also false",
-            "required": true,
-            "value":"false"
-        },
-        "READ_COMMAND": {
-            "description": "Bot will read all commands (blue tick). Can be also false",
-            "required": true,
-            "value":"true"
-        },
-       "HEROKU_API_KEY": {
-            "description": "For updating bot and setting vars remotely",
-            "required": true,
-            "value":""
-        },
-        "HEROKU_APP_NAME": {
-            "description": "Exact name which you gave at the top",
-            "required": true,
-            "value":""
-        },
-        "STICKER_DATA": {
-            "description": "Name of stickers created using bot. Can also split using ;",
-            "required": true,
-            "value":"ʀᴀɢᷨᴀͦɴͭᴏʀᴋ"
-        },
-        "CHATBOT": {
-            "description": "AI chatbot",
-            "required": true,
-            "value":"off"
-        },
-        "BOT_NAME": {
-            "description": "Name of AI chatbot",
-            "required": true,
-            "value":"Raganork"
-        },
-        "BOT_INFO": {
-            "description": "Name, image, owner and other details in menu (seperate with comma)",
-            "required": true,
-            "value":"Raganork,SKL11,91123456789,https://i.imgur.com/B2YWSLk.jpg"
-        },
-        "AUDIO_DATA": {
-            "description": "Name of audio (take) name;name;image(url)",
-            "required": true,
-            "value":"ʀᴀɢᷨᴀͦɴͭᴏʀᴋ;ʀᴀɢᷨᴀͦɴͭᴏʀᴋ;https://2.img-dpreview.com/files/p/E~C1000x0S4000x4000T1200x1200~articles/3925134721/0266554465.jpeg"
-        },
-        "MODE": {
-            "description": "Private or public",
-            "required": true,
-            "value":"private"
-        },
-        "SUDO": {
-            "description": "These numbers can control your bot. seperate with commas",
-            "required": false,
-            "value":"919074309534"
-        },
-        "ALIVE": {
-            "description": "Alive message {image/link}, {sender} can also be used",
-            "required": false,
-            "value":"{pp} Active since {uptime}\n User:{sender}"
-        },
-       "SESSION": {
-            "description": "Your MD session",
-            "required": true
-             
-        }
+  "name": "Deploy",
+  "description": "Wa Bot.",
+  "keywords": [
+    "whatsapp",
+    "bot"
+  ],
+  "repository": "https://github.com/raganork-ind/whatsapp-bot",
+  "stack": "container",
+  "env": {
+    "HANDLERS": {
+      "description": "Prefix of commands. Can be also false",
+      "required": true,
+      "value": "."
     },
-    "addons": [{
+    "ANTILINK_WARN": {
+      "description": "Groups for antilink (JIDS)",
+      "required": false,
+      "value": "jid,jid"
+    },
+    "READ_MESSAGES": {
+      "description": "Bot will read all messages. Can be also false",
+      "required": true,
+      "value": "false"
+    },
+    "PM_ANTISPAM": {
+      "description": "Enable or disable private message anti-spam (true or false)",
+      "required": true,
+      "value": "true"
+    },
+    "READ_COMMAND": {
+      "description": "Bot will read all commands (blue tick). Can be also false",
+      "required": true,
+      "value": "true"
+    },
+    "HEROKU_API_KEY": {
+      "description": "For updating bot and setting vars remotely",
+      "required": true,
+      "value": "."
+    },
+    "HEROKU_APP_NAME": {
+      "description": "Exact name which you gave at the top",
+      "required": true,
+      "value": "."
+    },
+    "STICKER_DATA": {
+      "description": "Name of stickers created using bot. Can also split using ;",
+      "required": true,
+      "value": "𝖀𝖑𝖙-𝕬𝕽"
+    },
+    "CHATBOT": {
+      "description": "AI chatbot",
+      "required": true,
+      "value": "off"
+    },
+    "BOT_NAME": {
+      "description": "Name of AI chatbot",
+      "required": true,
+      "value": "Raganork"
+    },
+    "BOT_INFO": {
+      "description": "Name, image, owner and other details in menu (separate with commas)",
+      "required": true,
+      "value": "Raganork;𝖀𝖑𝖙-𝕬𝕽;0;https://i.imgur.com/P7ziVhr.jpeg"
+    },
+    "AUDIO_DATA": {
+      "description": "Name of audio (take) name;name;image(url)",
+      "required": true,
+      "value": "ʀᴀɢᷨᴀͦɴͭᴏʀᴋ;ʀᴀɢᷨᴀͦɴͭᴏʀᴋ;https://2.img-dpreview.com/files/p/E~C1000x0S4000x4000T1200x1200~articles/3925134721/0266554465.jpeg"
+    },
+    "MODE": {
+      "description": "Private or public",
+      "required": true,
+      "value": "private"
+    },
+    "SUDO": {
+      "description": "These numbers can control your bot. Separate with commas",
+      "required": false,
+      "value": "null,2349163916314"
+    },
+    "ALIVE": {
+      "description": "Alive message {image/link}, {sender} can also be used",
+      "required": false,
+      "value": "👋 Hello {sender}!\n\n🚀 *I'm up and running smoothly!*\n⏳ *Uptime:* {uptime}\n🧠 *Feeling smart and ready to assist you!*\n📜 Type *.list or .menu* to see more of what I can do!\nhttps://i.imgur.com/P7ziVhr.jpeg"
+    },
+    "SESSION": {
+      "description": "Your MD session",
+      "required": true
+    },
+    "AUTO_READ_STATUS": {
+      "description": "Automatically read messages (true or false)",
+      "required": false,
+      "value": "false"
+    },
+    "ALWAYS_ONLINE": {
+      "description": "Keep bot always online (true or false)",
+      "required": false,
+      "value": "true"
+    }
+  },
+  "addons": [
+    {
       "plan": "heroku-postgresql"
-    }],
-    "buildpacks": [{
+    }
+  ],
+  "buildpacks": [
+    {
       "url": "heroku-community/apt"
-      },
-      {
+    },
+    {
       "url": "https://github.com/clhuang/heroku-buildpack-webp-binaries.git"
-      }]
-  }
+    }
+  ]
+}
