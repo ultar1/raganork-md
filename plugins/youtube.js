@@ -38,7 +38,7 @@ Module({
   pattern: 'play ?(.*)',
   fromMe: fm,
   desc: "Play audios from YouTube",
-  usage:'.play starboy',
+  usage:'.play Ultar',
   use: 'download'
 }, (async (message, match) => {
 if (!match[1]) return message.sendReply("_Need song name, eg: .play starboy_")
