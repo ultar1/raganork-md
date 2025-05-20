@@ -61,7 +61,7 @@
     "BOT_INFO": {
       "description": "Name, image, owner and other details in menu (separate with commas)",
       "required": true,
-      "value": "Raganork;𝖀𝖑𝖙-𝕬𝕽;0;https://i.imgur.com/P7ziVhr.jpeg"
+      "value": "Raganork;𝖀𝖑𝖙-𝕬𝕽;0;"
     },
     "AUDIO_DATA": {
       "description": "Name of audio (take) name;name;image(url)",
